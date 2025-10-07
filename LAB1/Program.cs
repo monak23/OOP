@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace VendingMachineApp
@@ -87,7 +86,7 @@ namespace VendingMachineApp
         {
             Console.WriteLine("\nДоступные номиналы: 100, 200, 500, 1000");
             Console.Write("Введите номинал монеты: ");
-            if (int.TryParse(Console.ReadLine(), out int coin) && (coin == 100  coin == 200  coin == 500 || coin == 1000))
+            if (int.TryParse(Console.ReadLine(), out int coin) && (coin == 100 || coin == 200 || coin == 500 || coin == 1000))
             {
                 balance += coin;
                 Console.WriteLine($"Монета {coin} руб. принята. Баланс: {balance} руб.");
